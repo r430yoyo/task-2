@@ -1,0 +1,25 @@
+body, html{
+  color: $text-color-base;
+  font-family: $font-family-base;
+  line-height: 24px;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

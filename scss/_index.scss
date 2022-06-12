@@ -1,0 +1,451 @@
+.section-title{
+  text-align: center;
+  margin-bottom: 48px;
+  @include pad{
+    margin-bottom: 40px;
+  }
+  h2{
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    @include pad{
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+  p{
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 16px;
+    @include pad{
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
+
+.go-top{
+  display: block;
+  width: 71px;
+  height: 71px;
+  border-radius: 100%;
+  color: #fff;
+  background: $primary-color;
+}
+
+.wrap{
+  height: 100vh;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+  background-repeat: no-repeat;
+  // background-size: 100vw 100vh;
+  background-position: right;
+  @include pad{
+    background: none;
+  }
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @include pad{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  .logo{
+    a{
+      display: block;
+      width: 218px;
+      height: 40px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/logo.png");
+      background-size: 218px 40px;
+      @include hide-text;
+      @include pad{
+        width: 131px;
+        height: 24px;
+        background-size: 131px 24px;
+      }
+    }
+  }
+  .program-fee{
+    color: #fff;
+    padding: 8px 32px;
+    background: $price-btn;
+    border-radius: 22px;
+  }
+  @include pad{
+    border-bottom: 5px solid $second-color;
+  }
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  @include pad{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 92px;
+  }
+  .banner-text{
+    :nth-child(1){
+      color: $primary-color;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 8px;
+      @include pad{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    :nth-child(2){
+      font-size: 48px;
+      line-height: 70px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      @include pad{
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+    :nth-child(3){
+      font-size: 20px;
+      line-height: 29px;
+      @include pad{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .banner-img{
+    width: 532px;
+    height: 534px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include pad{
+      width: 334px;
+      height: 245px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+      // background-size: 304px 305px, 334px 245px;
+      background-size: cover,cover;
+      background-position: center,center;
+    }
+  }
+  img{
+    width: 532px;
+    height: 534px;
+  }
+}
+
+.community{
+  margin-bottom: 100px;
+  @include pad{
+    margin-bottom: 60px;
+  }
+  &-group{
+    display: flex;
+    justify-content: space-around;
+    @include pad{
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+  &-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 250px;
+    @include pad{
+      gap: 16px;
+    }
+    img{
+      width: 90px;
+      height: 90px;
+      @include pad{
+        width: 60px;
+        height: 60px;
+      }
+    }
+    h3{
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      font-weight: bold;
+      @include pad{
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    p{
+      color: $text-color-content;
+      text-align: center;
+    }
+  }
+}
+
+.role{
+  margin-bottom: 100px;
+  @include pad{
+    margin-bottom: 60px;
+  }
+  &-group{
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+  &-card{
+    // display: flex;
+    // flex-direction: column;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px $shadow-color;
+    img{
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+    }
+  }
+  &-body{
+    padding: 16px 16px 24px;
+    text-align: center;
+  }
+  &-title{
+    color: $primary-color;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+}
+
+.function{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include pad{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  &-group{
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include pad{
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  &-card{
+    width: 230px;
+    padding: 32px 32px 48px 32px;
+    box-shadow: 0px 2px 10px $shadow-color;
+    border-radius: 12px;
+    margin-bottom: 28px;
+    @include pad{
+      padding: 32px 24px 48px 24px;
+      margin-bottom: 24px;
+    }
+    .top-img{
+      width: 86px;
+      height: 86px;
+      border-radius: 100%;
+      box-shadow: 0px 2px 10px $shadow-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      img{
+        width: 52px;
+        height: 52px;
+      }
+    }
+  }
+  &-title{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    @include pad{
+      margin-bottom: 20px;
+    }
+  }
+  &-introduce{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    @include pad{
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .title{
+      font-size: 32px;
+      line-height: 46px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      @include pad{
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+    .content{
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 24px;
+      @include pad{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+    }
+    .program-fee{
+      display: inline-block;
+      font-size: 18px;
+      line-height: 26px;
+      color: #fff;
+      padding: 12px 32px;
+      background: $primary-color;
+      border-radius: 27px;
+    }
+  }
+}
+
+.evaluation{
+  margin-bottom: 100px;
+  @include pad{
+    margin-bottom: 60px;
+    margin-top: 32px;
+  }
+  &-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @include pad{
+      :first-child{
+        display: block;
+      }
+    }
+  }
+  &-card{
+    width: 32%;
+    position: relative;
+    box-shadow: 0px 2px 10px $shadow-color;
+    padding: 48px 32px 24px;
+    border-radius: 12px;
+    margin-top: 48px;
+    @include pad{
+      width: 100%;
+      margin-top: 32px;
+      display: none;
+    }
+    .user-img{
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      position: absolute;
+      top: -56px;
+    }
+  }
+  &-line{
+    border-top: 1px solid $divider-color;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .title{
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .star{
+      width: 121px;
+      display: flex;
+      justify-content: space-between;
+      img{
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  &-swiper{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    .swiper-item{
+      width: 10px;
+      height: 10px;
+      background: $divider-color;
+      border-radius: 100%;
+      &.active{
+        width: 16px;
+        background: $second-color-page;
+      }
+    }
+  }
+}
+
+.footer-up{
+  height: 410px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 30px;
+  @include pad{
+    padding-bottom: 150px;
+  }
+  &-text{
+    text-align: center;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    @include pad{
+      font-size: 24px;
+      line-height: 35px;
+      margin-bottom: 24px;
+    }
+  }
+  .program-fee{
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 12px 32px;
+    background: $primary-color;
+    border-radius: 27px;
+  }
+  @include pad{
+    // height: 461px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
+  }
+}
+
+.footer-down{
+  background: $bg-color;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &-text{
+    text-align: center;
+  }
+}
